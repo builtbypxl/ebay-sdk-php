@@ -56,6 +56,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
  * @property string $ExtendedOrderID
  * @property boolean $ContainseBayPlusTransaction
+ * @property boolean $eBayCollectAndRemitTax
  */
 class OrderType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -326,6 +327,12 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ContainseBayPlusTransaction'
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
         ]
     ];
 

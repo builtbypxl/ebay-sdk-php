@@ -76,7 +76,10 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $Gift
  * @property boolean $GuaranteedShipping
  * @property boolean $GuaranteedDelivery
+ * @property boolean $eBayCollectAndRemitTax
+ * @property \DTS\eBaySDK\Trading\Types\CollectAndRemitTaxesType $eBayCollectAndRemitTaxes
  */
+
 class TransactionType extends \DTS\eBaySDK\Types\BaseType
 {
     /**
@@ -466,7 +469,19 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GuaranteedDelivery'
-        ]
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
+        ],
+        'eBayCollectAndRemitTaxes' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\CollectAndRemitTaxesType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTaxes'
+        ],
     ];
 
     /**
